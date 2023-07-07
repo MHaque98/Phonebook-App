@@ -78,7 +78,7 @@ const generateId = () => {
   return maxId + 1;
 };
 
-const PORT = 3688;
+const PORT = process.env.PORT || 3688;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
